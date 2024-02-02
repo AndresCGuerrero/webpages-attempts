@@ -1,10 +1,10 @@
 /* colors */
 
 :root {
-  --main-clr: #11faa6;
-  --second-clr: #43a581;
+  --main-clr: #43a581;
+  --second-clr: #11faa6;
   --accent-clr-1: #fa3c11;
-  --accent-clr-2: #ba533c;
+  --accent-clr-2: #fa6d3e;
   --accent-clr-3: #7a4f46;
 }
 
@@ -67,10 +67,11 @@ main {
 }
 
 .freeCode img {
-  background-color: #0a0a22;
+  background-color: #ffffff;
   max-width: 21.9rem;
   width: 100%;
   height: 150px;
+  color: #0a0a23;
 }
 
 .text {
@@ -100,21 +101,22 @@ main {
 }
 
 footer {
-  background-color: var(--second-clr);
-  height: 3rem;
+  background-color: var(--main-clr);
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .link {
-  color: var(--accent-clr-1);
+  color: var(--accent-clr-2);
   text-decoration: none;
   cursor: pointer;
   margin-top: 0.5rem;
   z-index: 1;
+  /* text-shadow: 0.5px 0.5px 0.4px #000; */
 }
 
 @media screen and (max-width: 30rem) {
