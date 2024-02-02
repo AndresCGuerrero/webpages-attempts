@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #565656;
+  background-color: #0a0a23;
   padding: 1rem;
   color: #fff;
 }
@@ -71,10 +71,16 @@ header button:hover {
 }
 
 .card a:visited {
-  color: #565656;
+  color: #1b1b32;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 48rem) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
   .content {
     display: flex;
     flex-wrap: wrap;
