@@ -1,3 +1,13 @@
+/* colors */
+
+:root {
+  --main-clr: #11faa6;
+  --second-clr: #43a581;
+  --accent-clr-1: #fa3c11;
+  --accent-clr-2: #ba533c;
+  --accent-clr-3: #7a4f46;
+}
+
 /* Reset */
 
 *,
@@ -25,7 +35,7 @@ body {
 }
 
 header {
-  background-color: #43a581;
+  background-color: var(--main-clr);
   padding: 1rem;
   color: #fff;
 }
@@ -90,7 +100,7 @@ main {
 }
 
 footer {
-  background-color: #51c79c;
+  background-color: var(--second-clr);
   height: 3rem;
   display: flex;
   align-items: center;
@@ -100,7 +110,7 @@ footer {
 }
 
 .link {
-  color: #fa3c11;
+  color: var(--accent-clr-1);
   text-decoration: none;
   cursor: pointer;
   margin-top: 0.5rem;
