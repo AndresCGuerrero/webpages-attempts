@@ -22,14 +22,22 @@ html {
   width: 100%;
   height: auto;
   margin: 0 0 1rem 0;
-  padding: 0.8rem 0 0.8rem 1.25rem;
+  padding: 0.8rem 1.25rem;
   line-height: 1;
   background-color: #a5d40a;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header h1 {
   text-shadow: 2px 1px 1px #555;
+}
+
+.header a {
+  text-decoration: none;
+  color: #f50;
 }
 
 .welcome {
