@@ -1,0 +1,92 @@
+/* Reset */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+form,
+iframe,
+figure {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #565656;
+  padding: 1rem;
+  color: #fff;
+}
+
+header button {
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  box-shadow: 1px 1px 1px #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #565656;
+  font-weight: 600;
+}
+
+header button:hover {
+  background-color: #5d5d5d;
+  box-shadow: inset 1px 1px 1px #565656;
+  color: #fff;
+  font-weight: 600;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card a {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card a:visited {
+  color: #565656;
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .card {
+    background-color: #ccc;
+    width: 510px;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

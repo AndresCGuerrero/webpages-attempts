@@ -1,0 +1,89 @@
+html {
+  font-family: "Poppins", sans-serif, serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  gap: 1rem;
+  background-color: #a5d40a;
+  align-items: center;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 1.5px 1.5px 1.5px #000;
+}
+
+header a {
+  margin-left: 0.5rem;
+}
+
+.home-btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #536a05;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background-color: #758e22;
+}
+
+.recipe-img {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+figcaption {
+  padding: 0 0.25rem;
+  margin: 0;
+}
+
+.recipe {
+  padding: 0.5rem 2rem;
+}
+
+.recipe h2 {
+  padding: 0;
+  margin: 0.7rem 0;
+}
+
+.ingredients {
+  padding-left: 3rem;
+}
+
+.steps {
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .recipe-img {
+    width: 500px;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .recipe {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

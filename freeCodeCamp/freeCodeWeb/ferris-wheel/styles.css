@@ -1,0 +1,189 @@
+/* Reset */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* styles */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wheel {
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 4rem;
+  position: absolute;
+  height: 55vw;
+  width: 55vw;
+  max-width: 500px;
+  max-height: 500px;
+  animation-name: wheel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.line {
+  background-color: black;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+.line:nth-of-type(3) {
+  transform: rotate(120deg);
+}
+.line:nth-of-type(4) {
+  transform: rotate(180deg);
+}
+.line:nth-of-type(5) {
+  transform: rotate(240deg);
+}
+.line:nth-of-type(6) {
+  transform: rotate(300deg);
+}
+
+.cabin {
+  background-color: red;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  border: 2px solid;
+  transform-origin: 50% 0%;
+  animation: cabins 10s ease-in-out infinite;
+}
+
+.cabin:nth-of-type(1) {
+  right: -8.5%;
+  top: 50%;
+}
+.cabin:nth-of-type(2) {
+  right: 17%;
+  top: 93.5%;
+}
+.cabin:nth-of-type(3) {
+  right: 67%;
+  top: 93.5%;
+}
+.cabin:nth-of-type(4) {
+  left: -8.5%;
+  top: 50%;
+}
+.cabin:nth-of-type(5) {
+  left: 17%;
+  top: 7%;
+}
+.cabin:nth-of-type(6) {
+  right: 17%;
+  top: 7%;
+}
+
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: purple;
+  }
+
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #565656;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+h1 {
+  color: #fff;
+}
+/* CABINS BACKGROUNDS */
+
+.cabin:nth-of-type(1) {
+  background-image: url(./1666720445212.jpg);
+  background-clip: padding-box;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cabin:nth-of-type(2) {
+  background-image: url(./1666720445212.jpg);
+  background-clip: padding-box;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cabin:nth-of-type(3) {
+  background-image: url(./1666720445212.jpg);
+  background-clip: padding-box;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cabin:nth-of-type(4) {
+  background-image: url(./1666720445212.jpg);
+  background-clip: padding-box;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cabin:nth-of-type(5) {
+  background-image: url(./1666720445212.jpg);
+  background-clip: padding-box;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cabin:nth-of-type(6) {
+  background-image: url(./1666720445212.jpg);
+  background-clip: padding-box;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .wheel {
+    margin-left: 200px;
+    margin-top: 4rem;
+  }
+}
