@@ -4,4 +4,4 @@ This is a test repository made to accomplish the first project based on HTML wit
 
 This small and simple project has as its goal to use all the most basic and common tags in HTML.
 
-[Link](https://andrescguerrero.github.io/odin-recipes/) to the "website".
+[Link](https://andrescguerrero.github.io/webpages-attempts/the-odin-proj/odin-recipes/index.html) to the "website".
