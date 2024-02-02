@@ -58,12 +58,16 @@ header button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #3b3b4f;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .card a {
   font-size: 1.2rem;
   margin-top: 1rem;
   text-decoration: none;
+  color: #fff;
 }
 
 .card a:hover {
@@ -71,7 +75,7 @@ header button:hover {
 }
 
 .card a:visited {
-  color: #1b1b32;
+  color: #fff;
 }
 
 @media screen and (min-width: 48rem) {
@@ -89,10 +93,18 @@ header button:hover {
   }
 
   .card {
-    background-color: #ccc;
+    background-color: #3b3b4f;
     width: 510px;
     padding: 1rem;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .card a {
+    color: #fff;
+  }
+
+  .card a:visited {
+    color: #fff;
   }
 }

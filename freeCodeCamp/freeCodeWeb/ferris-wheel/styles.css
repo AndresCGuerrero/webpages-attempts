@@ -14,16 +14,40 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0a0a23;
+  line-height: 1;
+  padding: 2.5rem 1.5rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.1rem;
+}
+
 .wheel {
   border: 2px solid black;
   border-radius: 50%;
-  margin-left: 100px;
+  margin-left: 150px;
   margin-top: 4rem;
   position: absolute;
-  height: 55vw;
-  width: 55vw;
-  max-width: 500px;
-  max-height: 500px;
+  height: 90vw;
+  width: 90vw;
+  max-width: 680px;
+  max-height: 680px;
   animation-name: wheel;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -119,24 +143,6 @@ html {
   }
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #0a0a23;
-  line-height: 1.5;
-  padding: 0.5rem 1rem;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-h1 {
-  color: #fff;
-}
 /* CABINS BACKGROUNDS */
 
 .cabin:nth-of-type(1) {
@@ -182,8 +188,24 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
+  header {
+    padding: 0.6rem 1.5rem;
+  }
+
+  header a {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
   .wheel {
     margin-left: 200px;
     margin-top: 4rem;
+    max-width: 500px;
+    max-height: 500px;
+    width: 55vw;
+    height: 55vw;
   }
 }
