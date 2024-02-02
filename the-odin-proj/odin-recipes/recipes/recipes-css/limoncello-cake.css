@@ -13,7 +13,7 @@ html {
 header {
   display: flex;
   gap: 1rem;
-  background-color: #a5d40a;
+  background-color: #cc9543;
   align-items: center;
   font-size: 0.8rem;
   line-height: 2;
@@ -32,14 +32,14 @@ header a {
   padding: 0.5rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #536a05;
+  background-color: #684817;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
 }
 
 .home-btn:hover {
-  background-color: #758e22;
+  background-color: #89560a;
 }
 
 .recipe-img {

@@ -48,14 +48,40 @@ header a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fcecd3;
+  padding: 1rem;
 }
 
 .card a {
   font-size: 1.2rem;
   margin-top: 1rem;
   text-decoration: none;
+  color: #e99519;
 }
 
 .card a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 48rem) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .card {
+    background-color: #fcecd3;
+    width: 510px;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

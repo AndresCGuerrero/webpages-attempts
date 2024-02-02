@@ -24,7 +24,7 @@ html {
   margin: 0 0 1rem 0;
   padding: 0.8rem 1.25rem;
   line-height: 1;
-  background-color: #a5d40a;
+  background-color: #cc9543;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,8 @@ html {
 
 .header a {
   text-decoration: none;
-  color: #f50;
+  color: #fff;
+  font-weight: 600;
 }
 
 .welcome {
@@ -46,7 +47,7 @@ html {
 }
 
 .ul-wrapper {
-  background-color: #a5d40a;
+  background-color: #cc9543;
   padding: 1rem 3rem;
   border-radius: 0.5rem;
 }
@@ -58,7 +59,7 @@ html {
 li > a {
   text-decoration: none;
   font-size: 1.15rem;
-  color: #f50;
+  color: #fff;
 }
 
 li a:hover {
