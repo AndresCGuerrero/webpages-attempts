@@ -1,0 +1,47 @@
+/* reset */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* styles */
+
+:root {
+  --main-clr: #000;
+}
+
+html {
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efb9bc;
+  padding: 0.5rem;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.header-title {
+  display: none;
+}
+
+.header-links,
+.header-links a {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  text-decoration: none;
+}
